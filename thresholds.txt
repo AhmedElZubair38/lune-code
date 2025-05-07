@@ -1,0 +1,3 @@
+blurriness threshold: 500, under 500 is considered blurry
+empty space threshold: 0.5, if a logo uses more than 50 percent of the space its flagged
+saturation threshold: 30, anything under 30 is usually grayscale or dull
