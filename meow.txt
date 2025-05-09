@@ -1,0 +1,51 @@
+curl -X POST https://api.cognitive.microsofttranslator.com/transliterate?api-version=3.0 \
+-H "Ocp-Apim-Subscription-Key: EZ3y444FXd1GNZF0OUNjGuDipN8YIeKp5xBXRgU67JsZLHdy3NJYJQQJ99BEACF24PCXJ3w3AAAbACOGicj1" \
+-H "Content-Type: application/json" \
+-d '[
+  {
+    "text": "ahmed",
+    "language": "ar",
+    "fromScript": "Latn",
+    "toScript": "Arab"
+  }
+]'
+
+
+
+curl -X POST "https://api.cognitive.microsofttranslator.com/transliterate?api-version=3.0" \
+-H "Ocp-Apim-Subscription-Key: EZ3y444FXd1GNZF0OUNjGuDipN8YIeKp5xBXRgU67JsZLHdy3NJYJQQJ99BEACF24PCXJ3w3AAAbACOGicj1" \
+-H "Ocp-Apim-Subscription-Region: uaenorth" \
+-H "Content-Type: application/json" \
+-d '[
+  {
+    "text": "ahmed",
+    "language": "ar",
+    "fromScript": "Latn",
+    "toScript": "Arab"
+  }
+]'
+
+
+
+
+curl -X POST "https://api.cognitive.microsofttranslator.com/transliterate?api-version=3.0" \
+-H "Ocp-Apim-Subscription-Key: EZ3y444FXd1GNZF0OUNjGuDipN8YIeKp5xBXRgU67JsZLHdy3NJYJQQJ99BEACF24PCXJ3w3AAAbACOGicj1" \
+-H "Ocp-Apim-Subscription-Region: uaenorth" \
+-H "Content-Type: application/json" \
+-d '[
+  {
+    "toScript": "Arab",
+    "text": "ahmed",
+    "fromScript": "Latn",
+    "language": "ar"
+  }
+]'
+
+
+
+
+curl -X POST "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=ar" \
+  -H "Ocp-Apim-Subscription-Key: EZ3y444FXd1GNZF0OUNjGuDipN8YIeKp5xBXRgU67JsZLHdy3NJYJQQJ99BEACF24PCXJ3w3AAAbACOGicj1" \
+  -H "Ocp-Apim-Subscription-Region: uaenorth" \
+  -H "Content-Type: application/json" \
+  -d '[{"Text": "Abu Dhabi Department of Economic Development"}]'
