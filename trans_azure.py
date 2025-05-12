@@ -3,6 +3,13 @@ import requests
 from tqdm import tqdm
 import time
 
+#trabnslate only
+
+# Azure Translator credentials and endpoint
+AZURE_KEY = "EZ3y444FXd1GNZF0OUNjGuDipN8YIeKp5xBXRgU67JsZLHdy3NJYJQQJ99BEACF24PCXJ3w3AAAbACOGicj1"
+AZURE_REGION = "uaenorth"
+AZURE_ENDPOINT = "https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&to=ar"
+
 
 def azure_translate(text):
     """Translate English text to Arabic using Azure Translator API."""
@@ -23,7 +30,7 @@ def azure_translate(text):
         return text  # fallback: return original if error
 
 # File paths
-input_file = 'TRANS/azure-input-data.xlsx'
+input_file = 'TRANS/input_file.xlsx'
 output_excel = 'TRANS/azure-output_file_encoded.xlsx'
 
 # Load data
